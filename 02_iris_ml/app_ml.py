@@ -39,5 +39,3 @@ plt.xlabel('Importance')
 plt.ylabel('Feature')
 plt.tight_layout()
 fig.savefig('feature_importance.png')
-
-#%%
