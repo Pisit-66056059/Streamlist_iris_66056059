@@ -24,10 +24,10 @@ y_pred = rfc.predict(x_test)
 score = accuracy_score(y_pred, y_test)
 print('Our accuracy score for this model is {}'.format(score))
 
-rf_pickle = open('random_forest_penguin.pickle', 'wb')
+rf_pickle = open('random_forest_iris.pickle', 'wb')
 pickle.dump(rfc, rf_pickle)
 rf_pickle.close()
-output_pickle = open('output_penguin.pickle', 'wb')
+output_pickle = open('output_iris.pickle', 'wb')
 pickle.dump(uniques, output_pickle)
 output_pickle.close()
 
