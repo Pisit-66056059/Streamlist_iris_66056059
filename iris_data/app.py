@@ -37,10 +37,10 @@ sns.set_style('darkgrid')
 markers = {"Setosa": "v", "Versicolor": "s", "Virginica": 'o'}
 
 fig, ax = plt.subplots()
-ax = sns.scatterplot(data=penguins_df,
+ax = sns.scatterplot(data=iris_df,
                      x=selected_x_var, y=selected_y_var,
                      hue='species', markers=markers, style='species')
 plt.xlabel(selected_x_var)
 plt.ylabel(selected_y_var)
-plt.title("Palmer's Penguins Data")
+plt.title("Iris's Species Data")
 st.pyplot(fig)
