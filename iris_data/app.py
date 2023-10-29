@@ -8,10 +8,10 @@ st.title("Iris Species")
 st.markdown('สร้าง `scatter plot` แสดงผลข้อมูล '
             '**Iris\'s Species** กัน')
 
-choices = ['Sepal_length_cm',
-           'Sepal_width_cm',
-           'Petal_length_cm',
-           'Petal_width_cm']
+choices = ['sepal.length',
+           'sepal.width',
+           'petal.length',
+           'petal.width']
 
 # https://docs.streamlit.io/library/api-reference/widgets/st.selectbox
 # 1. สร้าง st.selectbox ของ ตัวเลือก แกน x และ y จาก choices
@@ -39,7 +39,7 @@ markers = {"Setosa": "v", "Versicolor": "s", "Virginica": 'o'}
 fig, ax = plt.subplots()
 ax = sns.scatterplot(data=iris_df,
                      x=selected_x_var, y=selected_y_var,
-                     hue='species', markers=markers, style='species')
+                     hue='variety', markers=markers, style='variety')
 plt.xlabel(selected_x_var)
 plt.ylabel(selected_y_var)
 plt.title("Iris's Species Data")
