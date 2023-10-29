@@ -11,10 +11,10 @@ import pickle
 
  
 
-penguin_df = pd.read_csv('penguins.csv') 
-penguin_df.dropna(inplace=True) 
-output = penguin_df['species'] 
-features = penguin_df[['island', 'bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex']] 
+iris_df = pd.read_csv('iris.csv')
+iris_df.dropna(inplace=True)
+output = iris_df['variety']
+features = iris_df[['sepal.length', 'sepal.width', 'petal.length', 'petal.width']]
 features = pd.get_dummies(features) 
 output, uniques = pd.factorize(output) 
 
